@@ -126,8 +126,9 @@ h1 span {
   min-height: 720px;
   overflow: hidden;
   background:
-    linear-gradient(90deg, rgba(7,10,12,.97) 0%, rgba(7,10,12,.82) 38%, rgba(7,10,12,.22) 72%, rgba(7,10,12,.32) 100%),
-    url("../assets/okladka-ebooka.png") center/cover no-repeat;
+    radial-gradient(circle at 72% 45%, rgba(255,255,255,.09) 0%, rgba(255,255,255,.035) 22%, transparent 50%),
+    radial-gradient(circle at 20% 80%, rgba(255,255,255,.035) 0%, transparent 35%),
+    #0b0d0f;
 }
 
 .hero::before {
@@ -330,8 +331,9 @@ h1 {
   align-items: center;
   overflow: hidden;
   background:
-    linear-gradient(90deg, rgba(7,9,10,.96), rgba(7,9,10,.67) 54%, rgba(7,9,10,.26)),
-    url("../assets/okladka-ebooka.png") center 53% / cover no-repeat;
+    radial-gradient(circle at 78% 50%, rgba(255,255,255,.07) 0%, rgba(255,255,255,.025) 24%, transparent 48%),
+    radial-gradient(circle at 15% 80%, rgba(255,255,255,.03) 0%, transparent 35%),
+    #101214;
 }
 
 .audience::after {
@@ -442,8 +444,9 @@ blockquote {
   align-items: center;
   overflow: hidden;
   background:
-    linear-gradient(90deg, rgba(6,9,10,.94), rgba(6,9,10,.45)),
-    url("../assets/okladka-ebooka.png") center 77% / cover no-repeat;
+    radial-gradient(circle at 72% 45%, rgba(255,255,255,.08) 0%, rgba(255,255,255,.03) 24%, transparent 48%),
+    radial-gradient(circle at 18% 75%, rgba(255,255,255,.03) 0%, transparent 35%),
+    #0b0d0f;
 }
 
 .final-content {
@@ -664,7 +667,6 @@ details p {
 
   .hero {
     min-height: 800px;
-    background-position: 60% center;
   }
 
   .hero-grid {

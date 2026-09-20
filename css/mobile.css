@@ -1,0 +1,282 @@
+/* =========================================
+   MOBILE / RESPONSIVE
+   ========================================= */
+
+@media (max-width: 900px) {
+
+  /* Global */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: min(calc(100% - 36px), 680px);
+  }
+
+  /* Navigation */
+  .desktop-nav,
+  .site-header > .nav > .button-small {
+    display: none;
+  }
+
+  .menu-toggle {
+    margin-left: auto;
+    display: grid;
+    gap: 5px;
+    border: 0;
+    background: transparent;
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #fff;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-grid {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .hero-copy {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: clamp(44px, 11vw, 62px);
+    line-height: 1.05;
+  }
+
+  .hero-description {
+    font-size: 15px;
+    line-height: 1.55;
+    max-width: 100%;
+  }
+
+  .hero-copy .button {
+    width: 100%;
+  }
+
+  /* Ebook cover */
+  .book-stage {
+    min-height: auto;
+    padding: 25px 0 20px;
+  }
+
+  .book {
+    width: min(260px, 70vw);
+  }
+
+  .book-glow {
+    width: 260px;
+    height: 340px;
+  }
+
+  /* Trust */
+  .trust-row {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  /* Benefits */
+  .benefit-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .benefit,
+  .benefit:first-child,
+  .benefit:nth-child(3),
+  .benefit:last-child {
+    padding: 28px 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .benefit:first-child {
+    padding-top: 0;
+  }
+
+  .benefit:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  /* Audience */
+  .audience {
+    min-height: auto;
+  }
+
+  .audience-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 70px 0;
+  }
+
+  blockquote {
+    justify-self: start;
+    max-width: 100%;
+    font-size: 25px;
+  }
+
+  /* Reviews */
+  .review-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .review,
+  .review:first-child,
+  .review:last-child {
+    padding: 32px 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .review:first-child {
+    padding-top: 0;
+  }
+
+  .review:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  /* Final CTA */
+  .final-cta {
+    min-height: auto;
+  }
+
+  .final-content {
+    padding: 70px 0;
+  }
+
+  .final-content h2 {
+    font-size: clamp(40px, 10vw, 52px);
+  }
+
+  .final-content .button {
+    width: 100%;
+  }
+
+  /* FAQ */
+  .faq {
+    padding: 65px 0;
+  }
+
+  /* Footer */
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+  }
+}
+
+
+@media (max-width: 560px) {
+
+  .container {
+    width: calc(100% - 32px);
+  }
+
+  .nav {
+    min-height: 68px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  /* Hero */
+  .hero-grid {
+    padding-top: 105px;
+    padding-bottom: 45px;
+  }
+
+  h1 {
+    font-size: clamp(42px, 12vw, 56px);
+  }
+
+  .eyebrow {
+    font-size: 11px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+  /* Cover */
+  .book-stage {
+    padding-top: 15px;
+  }
+
+  .book {
+    width: min(220px, 64vw);
+  }
+
+  /* Buttons */
+  .button {
+    min-height: 52px;
+    padding-inline: 24px;
+  }
+
+  /* Trust */
+  .trust-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Sections */
+  .benefits,
+  .reviews,
+  .faq {
+    padding: 60px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 35px;
+  }
+
+  .section-heading h2 {
+    font-size: 40px;
+  }
+
+  /* Audience */
+  .audience-grid {
+    padding: 60px 0;
+  }
+
+  .audience h2 {
+    font-size: 43px;
+  }
+
+  /* CTA */
+  .final-content {
+    padding: 60px 0;
+  }
+
+  .final-content h2 {
+    font-size: 42px;
+  }
+
+  /* Footer */
+  .footer-links {
+    gap: 12px 18px;
+    font-size: 11px;
+  }
+}
