@@ -14,12 +14,3 @@ if (menuToggle && mobileNav) {
     });
   });
 }
-
-// Placeholder for the future payment integration.
-// Replace this handler with the payment provider checkout URL/API.
-document.querySelectorAll("[data-buy]").forEach((button) => {
-  button.addEventListener("click", (event) => {
-    event.preventDefault();
-    alert("Płatności podłączymy w kolejnym etapie.");
-  });
-});
