@@ -1,0 +1,507 @@
+/* =========================================
+   AUDIENCE SECTION
+   ========================================= */
+
+.audience {
+  position: relative;
+
+  min-height: 760px;
+
+  padding: 70px 0 75px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 84% 42%,
+      rgba(133, 81, 57, 0.20),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 15% 75%,
+      rgba(88, 67, 56, 0.16),
+      transparent 34%
+    ),
+    #171619;
+
+  color: #f5f1eb;
+}
+
+
+/* =========================================
+   DELIKATNE POŚWIATY
+   ========================================= */
+
+.audience-bg-glow {
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  border-radius: 50%;
+
+  filter: blur(100px);
+
+  opacity: 0.22;
+
+  pointer-events: none;
+}
+
+.audience-bg-glow-left {
+  left: -180px;
+  bottom: -120px;
+
+  background: rgba(102, 76, 61, 0.55);
+}
+
+.audience-bg-glow-right {
+  right: -140px;
+  top: 180px;
+
+  background: rgba(163, 101, 67, 0.55);
+}
+
+
+/* =========================================
+   GÓRNA LINIA
+   ========================================= */
+
+.audience-line {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.08);
+}
+
+
+/* =========================================
+   CONTAINER
+   ========================================= */
+
+.audience-container {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1100px;
+}
+
+
+/* =========================================
+   NAGŁÓWEK
+   ========================================= */
+
+.audience-heading {
+  text-align: center;
+
+  margin-bottom: 58px;
+}
+
+.audience-heading .eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  margin: 0 0 18px;
+
+  color: #c18e75;
+
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 600;
+
+  letter-spacing: 0.24em;
+}
+
+.audience-heading .eyebrow span {
+  display: block;
+
+  width: 58px;
+  height: 1px;
+
+  background: rgba(193, 142, 117, 0.55);
+}
+
+.audience-heading h2 {
+  margin: 0;
+
+  color: #f5f1eb;
+
+  font-family: var(--serif);
+  font-size: clamp(50px, 5vw, 66px);
+  font-weight: 500;
+
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+}
+
+
+/* =========================================
+   GŁÓWNY UKŁAD
+   ========================================= */
+
+.audience-content {
+  display: grid;
+
+  grid-template-columns: 1fr 0.82fr;
+
+  gap: 90px;
+
+  align-items: center;
+}
+
+
+/* =========================================
+   LEWA KOLUMNA
+   ========================================= */
+
+.audience-list h3 {
+  margin: 0 0 30px;
+
+  color: #f2eee8;
+
+  font-family: var(--serif);
+  font-size: 34px;
+  font-weight: 500;
+
+  line-height: 1;
+}
+
+
+/* =========================================
+   LISTA
+   ========================================= */
+
+.audience-list ul {
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.audience-list li {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+
+
+/* =========================================
+   IKONY
+   ========================================= */
+
+.audience-icon {
+  width: 52px;
+  height: 52px;
+
+  flex: 0 0 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(193, 142, 117, 0.42);
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  color: #d5a083;
+
+  font-family: var(--serif);
+  font-size: 24px;
+
+  box-shadow:
+    inset 0 0 20px rgba(193, 142, 117, 0.04);
+}
+
+
+/* =========================================
+   TEKST LISTY
+   ========================================= */
+
+.audience-list li p {
+  margin: 0;
+
+  color: rgba(245, 241, 235, 0.82);
+
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+
+/* =========================================
+   KARTA Z CYTATEM
+   ========================================= */
+
+.audience-quote {
+  position: relative;
+
+  min-height: 425px;
+
+  padding: 70px 68px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border: 1px solid rgba(193, 142, 117, 0.42);
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.035),
+      rgba(255, 255, 255, 0.008)
+    );
+
+  box-shadow:
+    inset 0 0 70px rgba(193, 142, 117, 0.025);
+}
+
+
+/* =========================================
+   CUDZYSŁÓW
+   ========================================= */
+
+.quote-mark {
+  position: absolute;
+
+  top: 58px;
+  left: 68px;
+
+  color: #b98268;
+
+  font-family: Georgia, serif;
+  font-size: 86px;
+
+  line-height: 0.5;
+
+  opacity: 0.85;
+}
+
+
+/* =========================================
+   CYTAT
+   ========================================= */
+
+.audience-quote blockquote {
+  margin: 35px 0 34px;
+
+  color: #f4eee7;
+
+  font-family: var(--serif);
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 400;
+
+  line-height: 1.12;
+
+  letter-spacing: -0.015em;
+}
+
+
+/* =========================================
+   SEPARATOR
+   ========================================= */
+
+.quote-divider {
+  width: 68px;
+  height: 1px;
+
+  margin-bottom: 25px;
+
+  background: #c18e75;
+}
+
+
+/* =========================================
+   TEKST POD CYTATEM
+   ========================================= */
+
+.audience-quote > p {
+  margin: 0;
+
+  color: #b98b76;
+
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 600;
+
+  line-height: 1.7;
+
+  letter-spacing: 0.24em;
+}
+
+
+/* =========================================
+   DOLNA LINIA
+   ========================================= */
+
+.audience-bottom-line {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.08);
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+  .audience {
+    min-height: auto;
+
+    padding: 75px 0 80px;
+  }
+
+  .audience-content {
+    grid-template-columns: 1fr;
+
+    gap: 55px;
+  }
+
+  .audience-list {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .audience-quote {
+    max-width: 550px;
+
+    width: 100%;
+
+    margin: 0 auto;
+
+    box-sizing: border-box;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 560px) {
+
+  .audience {
+    padding: 60px 0 65px;
+  }
+
+  .audience-heading {
+    margin-bottom: 45px;
+  }
+
+  .audience-heading .eyebrow {
+    gap: 10px;
+
+    font-size: 10px;
+  }
+
+  .audience-heading .eyebrow span {
+    width: 30px;
+  }
+
+  .audience-heading h2 {
+    font-size: 43px;
+  }
+
+
+  .audience-content {
+    gap: 45px;
+  }
+
+
+  .audience-list h3 {
+    margin-bottom: 25px;
+
+    font-size: 29px;
+  }
+
+
+  .audience-list ul {
+    gap: 19px;
+  }
+
+
+  .audience-list li {
+    align-items: flex-start;
+
+    gap: 14px;
+  }
+
+
+  .audience-icon {
+    width: 42px;
+    height: 42px;
+
+    flex-basis: 42px;
+
+    font-size: 19px;
+  }
+
+
+  .audience-list li p {
+    padding-top: 3px;
+
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+
+  .audience-quote {
+    min-height: 350px;
+
+    padding: 55px 35px;
+
+    border-radius: 16px;
+  }
+
+
+  .quote-mark {
+    top: 48px;
+    left: 35px;
+
+    font-size: 68px;
+  }
+
+
+  .audience-quote blockquote {
+    margin: 30px 0 28px;
+
+    font-size: 32px;
+  }
+
+
+  .quote-divider {
+    margin-bottom: 20px;
+  }
+
+
+  .audience-quote > p {
+    font-size: 9px;
+    letter-spacing: 0.19em;
+  }
+}

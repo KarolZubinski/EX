@@ -1,0 +1,290 @@
+/* =========================================
+   FINAL CTA
+   ========================================= */
+
+.final-cta {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 32px 20px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(126, 38, 45, 0.28),
+      transparent 38%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(146, 84, 57, 0.16),
+      transparent 30%
+    ),
+    #151416;
+
+  color: #f5f1eb;
+}
+
+
+/* =========================================
+   DELIKATNA POŚWIATA
+   ========================================= */
+
+.final-cta::before {
+  content: "";
+
+  position: absolute;
+
+  width: 520px;
+  height: 520px;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  background: rgba(151, 45, 52, 0.08);
+
+  filter: blur(90px);
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   OVERLAY
+   ========================================= */
+
+.final-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.12),
+      rgba(0, 0, 0, 0.28)
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   CONTENT
+   ========================================= */
+
+.final-content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 850px;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   EYEBROW
+   ========================================= */
+
+.final-content .eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 16px;
+
+  margin: 0 0 14px;
+
+  color: #c58a73;
+
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 0.25em;
+}
+
+.final-content .eyebrow::before,
+.final-content .eyebrow::after {
+  content: "";
+
+  width: 52px;
+  height: 1px;
+
+  background: rgba(197, 138, 115, 0.5);
+}
+
+
+/* =========================================
+   HEADLINE
+   ========================================= */
+
+.final-content h2 {
+  margin: 0;
+
+  color: #f7f2eb;
+
+  font-family: var(--serif);
+  font-size: clamp(54px, 6vw, 78px);
+  font-weight: 500;
+
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+}
+
+
+/* =========================================
+   DESCRIPTION
+   ========================================= */
+
+.final-content > p:not(.eyebrow) {
+  margin: 18px auto 24px;
+
+  color: rgba(245, 241, 235, 0.72);
+
+  font-family: var(--sans);
+  font-size: 17px;
+  font-weight: 400;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   BUTTON
+   ========================================= */
+
+.final-content .button {
+  min-width: 245px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  padding: 17px 30px;
+
+  border: none;
+  border-radius: 999px;
+
+  background: #ed263c;
+
+  color: #ffffff;
+
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 12px 35px rgba(237, 38, 60, 0.22);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.final-content .button:hover {
+  transform: translateY(-2px);
+
+  background: #f32c42;
+
+  box-shadow:
+    0 16px 42px rgba(237, 38, 60, 0.30);
+}
+
+
+/* =========================================
+   TRUST
+   ========================================= */
+
+.final-content .trust-row {
+  margin-top: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 34px;
+}
+
+.final-content .trust-row > div {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  color: rgba(245, 241, 235, 0.58);
+
+  font-family: var(--sans);
+  font-size: 12px;
+}
+
+.final-content .trust-icon {
+  color: #c58a73;
+
+  font-size: 16px;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 560px) {
+
+  .final-cta {
+    padding: 45px 20px;
+  }
+
+  .final-content .eyebrow {
+    font-size: 9px;
+    gap: 10px;
+  }
+
+  .final-content .eyebrow::before,
+  .final-content .eyebrow::after {
+    width: 30px;
+  }
+
+  .final-content h2 {
+    font-size: 47px;
+    line-height: 1;
+  }
+
+  .final-content > p:not(.eyebrow) {
+    max-width: 330px;
+
+    margin-top: 18px;
+    margin-bottom: 24px;
+
+    font-size: 15px;
+  }
+
+  .final-content .button {
+    width: 100%;
+    max-width: 360px;
+
+    box-sizing: border-box;
+  }
+
+  .final-content .trust-row {
+    flex-direction: column;
+
+    gap: 13px;
+
+    margin-top: 22px;
+  }
+}
