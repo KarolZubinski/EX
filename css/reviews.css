@@ -1,0 +1,317 @@
+/* =========================================
+   REVIEWS
+   ========================================= */
+
+.reviews {
+  padding: 72px 0 68px;
+
+  background: var(--cream);
+
+  color: var(--text);
+}
+
+
+/* =========================================
+   NAGŁÓWEK
+   ========================================= */
+
+.reviews .section-heading {
+  max-width: 620px;
+
+  margin: 0 auto 42px;
+
+  text-align: center;
+}
+
+.reviews .section-heading .eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  margin: 0 0 14px;
+
+  color: #8b8279;
+}
+
+.reviews .section-heading .eyebrow::before,
+.reviews .section-heading .eyebrow::after {
+  content: "";
+
+  width: 48px;
+  height: 1px;
+
+  background: #cfc8bd;
+}
+
+.reviews .section-heading h2 {
+  max-width: 620px;
+
+  margin: 0 auto;
+
+  font-family: var(--serif);
+
+  font-size: clamp(38px, 4.2vw, 52px);
+
+  line-height: 1.05;
+}
+
+
+/* =========================================
+   DODATKOWY OPIS
+   ========================================= */
+
+.reviews .section-heading::after {
+  content:
+    "Kilka słów od osób, które spojrzały na swoje relacje z innej perspektywy.";
+
+  display: block;
+
+  max-width: 620px;
+
+  margin: 16px auto 0;
+
+  color: #77736e;
+
+  font-family: var(--sans);
+
+  font-size: 15px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================
+   GRID
+   ========================================= */
+
+.review-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  max-width: 1080px;
+
+  margin: 0 auto;
+
+  border: 0;
+}
+
+
+/* =========================================
+   POJEDYNCZA OPINIA
+   ========================================= */
+
+.review {
+  position: relative;
+
+  min-height: 255px;
+
+  padding: 0 32px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+
+  border-right: 1px solid #ddd7ce;
+
+  background: transparent;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.review:first-child {
+  padding-left: 25px;
+}
+
+.review:last-child {
+  padding-right: 25px;
+
+  border-right: 0;
+}
+
+
+/* =========================================
+   CYTAT
+   ========================================= */
+
+.review .quote {
+  display: block;
+
+  margin-bottom: 17px;
+
+  font-family: Georgia, serif;
+
+  font-size: 42px;
+
+  font-weight: 400;
+
+  line-height: 0.7;
+
+  color: #a16f61;
+}
+
+
+/* =========================================
+   OPINIA
+   ========================================= */
+
+.review p {
+  max-width: 250px;
+
+  margin: 0 0 18px;
+
+  color: #77736f;
+
+  font-family: var(--sans);
+
+  font-size: 14px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================
+   AUTOR
+   ========================================= */
+
+.review strong {
+  margin-top: auto;
+
+  color: #202023;
+
+  font-family: var(--sans);
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.02em;
+}
+
+
+/* =========================================
+   HOVER
+   ========================================= */
+
+.review:hover {
+  transform: translateY(-3px);
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+  .reviews {
+    padding: 65px 0 70px;
+  }
+
+  .review-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .review {
+    min-height: 240px;
+
+    padding: 0 22px;
+  }
+
+  .review:first-child {
+    padding-left: 15px;
+  }
+
+  .review:last-child {
+    padding-right: 15px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 560px) {
+
+  .reviews {
+    padding: 60px 0 65px;
+  }
+
+  .reviews .section-heading {
+    margin-bottom: 38px;
+  }
+
+  .reviews .section-heading .eyebrow {
+    gap: 10px;
+  }
+
+  .reviews .section-heading .eyebrow::before,
+  .reviews .section-heading .eyebrow::after {
+    width: 28px;
+  }
+
+  .reviews .section-heading h2 {
+    max-width: 340px;
+
+    font-size: 38px;
+
+    line-height: 1.05;
+  }
+
+  .reviews .section-heading::after {
+    max-width: 340px;
+
+    font-size: 14px;
+  }
+
+  .review-grid {
+    grid-template-columns: 1fr;
+
+    row-gap: 0;
+  }
+
+  .review {
+    min-height: auto;
+
+    padding: 30px 20px 34px;
+
+    border-right: 0;
+
+    border-bottom: 1px solid #ddd7ce;
+  }
+
+  .review:first-child {
+    padding-left: 20px;
+  }
+
+  .review:last-child {
+    padding-right: 20px;
+
+    border-bottom: 0;
+  }
+
+  .review .quote {
+    margin-bottom: 14px;
+
+    font-size: 38px;
+  }
+
+  .review p {
+    max-width: 310px;
+
+    margin-bottom: 17px;
+  }
+
+  .review strong {
+    margin-top: 0;
+  }
+}

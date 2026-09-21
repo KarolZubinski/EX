@@ -1,0 +1,255 @@
+/* =========================================
+   FAQ
+   ========================================= */
+
+.faq {
+  background: #f7f4ee;
+  color: #171719;
+  padding: 110px 20px;
+}
+
+.faq-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.faq .section-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.faq .section-heading .eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  margin-bottom: 18px;
+
+  color: #9a6a5d;
+
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+}
+
+.faq .section-heading .eyebrow::before,
+.faq .section-heading .eyebrow::after {
+  content: "";
+
+  width: 45px;
+  height: 1px;
+
+  background: rgba(154, 106, 93, 0.4);
+}
+
+.faq .section-heading h2 {
+  margin: 0;
+
+  color: #171719;
+
+  font-family: var(--serif);
+  font-size: clamp(42px, 5vw, 62px);
+  font-weight: 500;
+
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+
+/* =========================================
+   FAQ LIST
+   ========================================= */
+
+.faq-list {
+  width: 100%;
+
+  border-top: 1px solid rgba(23, 23, 25, 0.15);
+}
+
+
+/* =========================================
+   SINGLE QUESTION
+   ========================================= */
+
+.faq-list details {
+  border-bottom: 1px solid rgba(23, 23, 25, 0.15);
+}
+
+
+/* =========================================
+   QUESTION
+   ========================================= */
+
+.faq-list summary {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-height: 82px;
+
+  padding: 0 4px;
+
+  cursor: pointer;
+
+  list-style: none;
+
+  color: #171719;
+
+  font-family: var(--sans);
+  font-size: 17px;
+  font-weight: 500;
+
+  transition: color 0.2s ease;
+}
+
+
+/* Usuwa domyślną strzałkę */
+
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-list summary::marker {
+  display: none;
+}
+
+
+/* =========================================
+   PLUS / MINUS
+   ========================================= */
+
+.faq-list summary::after {
+  content: "+";
+
+  flex-shrink: 0;
+
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 20px;
+
+  border: 1px solid rgba(23, 23, 25, 0.2);
+  border-radius: 50%;
+
+  color: #9a6a5d;
+
+  font-family: var(--sans);
+  font-size: 20px;
+  font-weight: 300;
+
+  line-height: 1;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+
+/* Po otwarciu */
+
+.faq-list details[open] summary::after {
+  content: "−";
+
+  transform: rotate(180deg);
+
+  background: #9a6a5d;
+  color: #ffffff;
+}
+
+
+/* =========================================
+   HOVER
+   ========================================= */
+
+.faq-list summary:hover {
+  color: #9a6a5d;
+}
+
+
+/* =========================================
+   ANSWER
+   ========================================= */
+
+.faq-list details p {
+  max-width: 720px;
+
+  margin: -4px 60px 28px 4px;
+
+  color: #686568;
+
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 400;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 560px) {
+
+  .faq {
+    padding: 75px 20px;
+  }
+
+  .faq .section-heading {
+    margin-bottom: 38px;
+  }
+
+  .faq .section-heading .eyebrow {
+    font-size: 9px;
+    gap: 10px;
+  }
+
+  .faq .section-heading .eyebrow::before,
+  .faq .section-heading .eyebrow::after {
+    width: 30px;
+  }
+
+  .faq .section-heading h2 {
+    font-size: 42px;
+    line-height: 1.05;
+  }
+
+  .faq-list summary {
+    min-height: 76px;
+
+    padding: 8px 0;
+
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .faq-list summary::after {
+    width: 30px;
+    height: 30px;
+
+    margin-left: 14px;
+
+    font-size: 18px;
+  }
+
+  .faq-list details p {
+    margin: -2px 45px 25px 0;
+
+    font-size: 14px;
+    line-height: 1.65;
+  }
+}
