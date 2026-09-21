@@ -1,0 +1,336 @@
+/* =========================================
+   BENEFITS / CO ZNAJDZIESZ W E-BOOKU
+   ========================================= */
+
+.benefits {
+  padding: 105px 0 110px;
+  background: var(--cream);
+  color: var(--text);
+}
+
+
+/* =========================================
+   NAGŁÓWEK
+   ========================================= */
+
+.benefits .section-heading {
+  max-width: 760px;
+  margin: 0 auto 65px;
+  text-align: center;
+}
+
+.benefits .section-heading .eyebrow {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  margin-bottom: 20px;
+
+  color: #8a8883;
+}
+
+.benefits .section-heading .eyebrow::before,
+.benefits .section-heading .eyebrow::after {
+  content: "";
+
+  width: 45px;
+  height: 1px;
+
+  background: rgba(20, 20, 20, 0.15);
+}
+
+.benefits .section-heading h2 {
+  font-size: clamp(44px, 5vw, 62px);
+  line-height: 1.05;
+}
+
+
+/* =========================================
+   GRID
+   ========================================= */
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  max-width: 1120px;
+  margin: 0 auto;
+
+  border-top: 1px solid rgba(20, 20, 20, 0.12);
+  border-bottom: 1px solid rgba(20, 20, 20, 0.12);
+}
+
+
+/* =========================================
+   POJEDYNCZY ELEMENT
+   ========================================= */
+
+.benefit {
+  position: relative;
+
+  min-height: 285px;
+
+  padding: 34px 34px 38px;
+
+  border-right: 1px solid rgba(20, 20, 20, 0.10);
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.benefit:first-child {
+  padding-left: 30px;
+}
+
+.benefit:last-child {
+  border-right: 0;
+}
+
+
+/* Delikatne wyróżnienie drugiej kolumny */
+
+.benefit:nth-child(2) {
+  background: rgba(255, 255, 255, 0.38);
+}
+
+
+/* =========================================
+   NUMER
+   ========================================= */
+
+.benefit::before {
+  content: "01";
+
+  display: block;
+
+  margin-bottom: 25px;
+
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 0.18em;
+
+  color: var(--red);
+}
+
+.benefit:nth-child(2)::before {
+  content: "02";
+}
+
+.benefit:nth-child(3)::before {
+  content: "03";
+}
+
+.benefit:nth-child(4)::before {
+  content: "04";
+}
+
+
+/* =========================================
+   IKONA
+   ========================================= */
+
+.benefit .icon-circle {
+  width: 50px;
+  height: 50px;
+
+  display: grid;
+  place-items: center;
+
+  margin-bottom: 22px;
+
+  border-radius: 50%;
+
+  background: #ebe7df;
+
+  color: var(--text);
+
+  font-size: 20px;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+/* =========================================
+   TYTUŁ
+   ========================================= */
+
+.benefit h3 {
+  margin: 0 0 12px;
+
+  font-family: var(--serif);
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 500;
+
+  color: var(--text);
+}
+
+
+/* =========================================
+   OPIS
+   ========================================= */
+
+.benefit p {
+  max-width: 220px;
+
+  margin: 0;
+
+  color: #68686b;
+
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+
+/* =========================================
+   HOVER
+   ========================================= */
+
+.benefit:hover {
+  background: rgba(255, 255, 255, 0.52);
+}
+
+.benefit:hover .icon-circle {
+  transform: translateY(-2px);
+
+  background: #e2ddd4;
+}
+
+
+/* =========================================
+   TEKST POD GRIDEM
+   ========================================= */
+
+.benefits::after {
+  content: "Więcej niż teoria. To praktyczne wsparcie.";
+
+  display: block;
+
+  margin-top: 48px;
+
+  text-align: center;
+
+  font-family: var(--serif);
+  font-size: 18px;
+  font-style: italic;
+
+  color: #77746e;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+  .benefits {
+    padding: 85px 0 90px;
+  }
+
+  .benefits .section-heading {
+    margin-bottom: 50px;
+  }
+
+  .benefit-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .benefit {
+    min-height: 270px;
+  }
+
+  .benefit:nth-child(2) {
+    border-right: 0;
+  }
+
+  .benefit:nth-child(3) {
+    border-top: 1px solid rgba(20, 20, 20, 0.10);
+    padding-left: 30px;
+  }
+
+  .benefit:nth-child(4) {
+    border-top: 1px solid rgba(20, 20, 20, 0.10);
+  }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 560px) {
+
+  .benefits {
+    padding: 70px 0 75px;
+  }
+
+  .benefits .section-heading {
+    margin-bottom: 42px;
+  }
+
+  .benefits .section-heading .eyebrow {
+    gap: 12px;
+  }
+
+  .benefits .section-heading .eyebrow::before,
+  .benefits .section-heading .eyebrow::after {
+    width: 25px;
+  }
+
+  .benefits .section-heading h2 {
+    font-size: 40px;
+  }
+
+  .benefit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit {
+    min-height: auto;
+
+    padding: 30px 24px 32px;
+
+    border-right: 0;
+    border-bottom: 1px solid rgba(20, 20, 20, 0.10);
+  }
+
+  .benefit:first-child {
+    padding-left: 24px;
+  }
+
+  .benefit:nth-child(2) {
+    border-right: 0;
+  }
+
+  .benefit:nth-child(3) {
+    border-top: 0;
+    padding-left: 24px;
+  }
+
+  .benefit:nth-child(4) {
+    border-top: 0;
+    border-bottom: 0;
+  }
+
+  .benefit p {
+    max-width: 100%;
+  }
+
+  .benefits::after {
+    margin-top: 35px;
+
+    padding: 0 20px;
+
+    font-size: 17px;
+  }
+}
