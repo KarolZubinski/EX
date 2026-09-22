@@ -1,0 +1,203 @@
+/* =========================================
+   LEGAL PAGE
+   ========================================= */
+
+.legal-page {
+  background: var(--cream);
+  color: var(--text);
+  min-height: calc(100vh - 80px);
+  padding: 90px 20px 100px;
+}
+
+
+/* =========================================
+   CONTAINER
+   ========================================= */
+
+.legal-container {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   EYEBROW
+   ========================================= */
+
+.legal-container > .eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  width: 100%;
+  margin: 0 0 18px;
+  color: #8b8279;
+  text-align: center;
+}
+
+.legal-container > .eyebrow::before,
+.legal-container > .eyebrow::after {
+  content: "";
+  width: 48px;
+  height: 1px;
+  background: #cfc8bd;
+}
+
+
+/* =========================================
+   MAIN TITLE
+   ========================================= */
+
+.legal-container > h1 {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: var(--serif);
+  font-size: clamp(44px, 5vw, 64px);
+  font-weight: 500;
+  line-height: 1.05;
+  color: #202023;
+}
+
+
+/* =========================================
+   INTRO
+   ========================================= */
+
+.legal-intro {
+  max-width: 650px;
+  margin: 22px auto 70px;
+  text-align: center;
+  color: #77736e;
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   SECTIONS
+   ========================================= */
+
+.legal-section {
+  padding: 34px 0;
+  border-top: 1px solid #ddd7ce;
+}
+
+.legal-section:last-of-type {
+  border-bottom: 1px solid #ddd7ce;
+}
+
+
+/* =========================================
+   SECTION HEADINGS
+   ========================================= */
+
+.legal-section h2 {
+  margin: 0 0 18px;
+  font-family: var(--serif);
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #202023;
+}
+
+
+/* =========================================
+   TEXT
+   ========================================= */
+
+.legal-section p {
+  margin: 0 0 14px;
+  color: #66625e;
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.legal-section p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================
+   DATE
+   ========================================= */
+
+.legal-date {
+  margin: 35px 0 0;
+  text-align: center;
+  color: #99928a;
+  font-family: var(--sans);
+  font-size: 12px;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 560px) {
+
+  .legal-page {
+    padding: 65px 20px 75px;
+  }
+
+
+  /* EYEBROW */
+
+  .legal-container > .eyebrow {
+    gap: 10px;
+    font-size: 10px;
+  }
+
+  .legal-container > .eyebrow::before,
+  .legal-container > .eyebrow::after {
+    width: 28px;
+  }
+
+
+  /* MAIN TITLE */
+
+  .legal-container > h1 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 43px;
+  }
+
+
+  /* INTRO */
+
+  .legal-intro {
+    max-width: 340px;
+    margin: 18px auto 48px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+
+  /* SECTIONS */
+
+  .legal-section {
+    padding: 28px 0;
+  }
+
+
+  /* SECTION HEADINGS */
+
+  .legal-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+
+  /* TEXT */
+
+  .legal-section p {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+}

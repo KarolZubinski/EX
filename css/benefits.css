@@ -1,0 +1,168 @@
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 560px) {
+
+  .benefits {
+    width: 100%;
+    padding: 60px 0 65px;
+    text-align: center;
+  }
+
+
+  /* NAGŁÓWEK */
+
+  .benefits .section-heading {
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0 auto 38px;
+
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    text-align: center;
+  }
+
+  .benefits .section-heading .eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .benefits .section-heading .eyebrow::before,
+  .benefits .section-heading .eyebrow::after {
+    width: 28px;
+  }
+
+  .benefits .section-heading h2 {
+    width: 100%;
+    max-width: 340px;
+
+    margin: 0 auto;
+
+    font-size: 38px;
+    line-height: 1.05;
+
+    text-align: center;
+  }
+
+  .benefits .section-heading::after {
+    width: 100%;
+    max-width: 340px;
+
+    margin: 16px auto 0;
+
+    font-size: 14px;
+    line-height: 1.55;
+
+    text-align: center;
+  }
+
+
+  /* GRID */
+
+  .benefit-grid {
+    width: 100%;
+    max-width: 100%;
+
+    grid-template-columns: 1fr;
+
+    margin: 0 auto;
+
+    row-gap: 0;
+  }
+
+
+  /* POJEDYNCZY ELEMENT */
+
+  .benefit {
+    width: 100%;
+    min-height: auto;
+
+    padding: 30px 20px 34px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    border-right: 0;
+    border-bottom: 1px solid #ddd7ce;
+
+    text-align: center;
+  }
+
+  .benefit:first-child,
+  .benefit:last-child {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  /* NUMER */
+
+  .benefit::before {
+    margin-bottom: 14px;
+
+    text-align: center;
+  }
+
+
+  /* IKONA */
+
+  .benefit .icon-circle {
+    width: 54px;
+    height: 54px;
+
+    margin: 0 auto 17px;
+
+    flex-shrink: 0;
+  }
+
+
+  /* TYTUŁ */
+
+  .benefit h3 {
+    width: 100%;
+    max-width: 310px;
+
+    margin: 0 auto 9px;
+
+    font-size: 23px;
+    line-height: 1.08;
+
+    text-align: center;
+  }
+
+
+  /* OPIS */
+
+  .benefit p {
+    width: 100%;
+    max-width: 310px;
+
+    margin: 0 auto;
+
+    font-size: 14px;
+    line-height: 1.55;
+
+    text-align: center;
+  }
+
+
+  /* OSTATNI ELEMENT */
+
+  .benefit:last-child {
+    border-bottom: 0;
+  }
+}
