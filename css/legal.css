@@ -192,6 +192,7 @@
   font-size: 15px;
   line-height: 1.5;
   outline: none;
+
   transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease,
@@ -244,6 +245,62 @@
 
 
 /* =========================================
+   FORM MESSAGE
+   ========================================= */
+
+.form-message {
+  max-width: 680px;
+  margin: 0 auto 28px;
+  padding: 14px 18px;
+  border-radius: 8px;
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.form-message.success {
+  background: #eee9e1;
+  color: #5d514a;
+  border: 1px solid #d8d1c7;
+}
+
+.form-message.error {
+  background: #f5e8e8;
+  color: #8b3f46;
+  border: 1px solid #dfc2c2;
+}
+
+
+/* =========================================
+   HONEYPOT - ANTI SPAM
+   ========================================= */
+
+/*
+   Ukryte pole używane do wykrywania botów.
+   Normalny użytkownik go nie widzi.
+*/
+
+.honeypot {
+  position: absolute !important;
+  left: -9999px !important;
+  top: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+.honeypot input {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+}
+
+
+/* =========================================
    MOBILE
    ========================================= */
 
@@ -254,7 +311,9 @@
   }
 
 
-  /* EYEBROW */
+  /* =========================================
+     EYEBROW
+     ========================================= */
 
   .legal-container > .eyebrow {
     gap: 10px;
@@ -267,7 +326,9 @@
   }
 
 
-  /* MAIN TITLE */
+  /* =========================================
+     MAIN TITLE
+     ========================================= */
 
   .legal-container > h1 {
     width: 100%;
@@ -277,7 +338,9 @@
   }
 
 
-  /* INTRO */
+  /* =========================================
+     INTRO
+     ========================================= */
 
   .legal-intro {
     max-width: 340px;
@@ -287,14 +350,18 @@
   }
 
 
-  /* SECTIONS */
+  /* =========================================
+     SECTIONS
+     ========================================= */
 
   .legal-section {
     padding: 28px 0;
   }
 
 
-  /* SECTION HEADINGS */
+  /* =========================================
+     SECTION HEADINGS
+     ========================================= */
 
   .legal-section h2 {
     font-size: 24px;
@@ -302,7 +369,9 @@
   }
 
 
-  /* TEXT */
+  /* =========================================
+     TEXT
+     ========================================= */
 
   .legal-section p {
     font-size: 14px;
@@ -337,5 +406,17 @@
   .contact-form .button {
     width: 100%;
     max-width: 360px;
+  }
+
+
+  /* =========================================
+     FORM MESSAGE - MOBILE
+     ========================================= */
+
+  .form-message {
+    max-width: 100%;
+    margin-bottom: 24px;
+    padding: 13px 15px;
+    font-size: 14px;
   }
 }

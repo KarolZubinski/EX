@@ -11,28 +11,45 @@
 
     <title>Kontakt — Powrót do ex</title>
 
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
       rel="stylesheet"
     />
 
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/legal.css" />
   </head>
 
   <body>
 
+    <!-- =========================================
+         HEADER
+         ========================================= -->
+
     <header class="site-header">
       <div class="container nav">
 
-        <a class="logo" href="index.html">
+        <a
+          class="logo"
+          href="index.html"
+          aria-label="Powrót do ex — strona główna"
+        >
           Powrót do <span>ex</span>
         </a>
 
-        <a class="button button-small" href="index.html">
+        <a
+          class="button button-small"
+          href="index.html"
+        >
           Wróć na stronę
         </a>
 
@@ -40,13 +57,29 @@
     </header>
 
 
+    <!-- =========================================
+         MAIN
+         ========================================= -->
+
     <main class="legal-page">
 
       <div class="container legal-container">
 
-        <p class="eyebrow dark">NAPISZ DO NAS</p>
+        <!-- EYEBROW -->
 
-        <h1>Kontakt</h1>
+        <p class="eyebrow dark">
+          NAPISZ DO NAS
+        </p>
+
+
+        <!-- TITLE -->
+
+        <h1>
+          Kontakt
+        </h1>
+
+
+        <!-- INTRO -->
 
         <p class="legal-intro">
           Masz pytanie dotyczące e-booka, zakupu lub działania strony?
@@ -54,47 +87,146 @@
         </p>
 
 
+        <!-- =========================================
+             KOMUNIKAT PO WYSŁANIU
+             ========================================= -->
+
+        <div
+          id="form-message"
+          class="form-message"
+          role="status"
+          aria-live="polite"
+          hidden
+        ></div>
+
+
+        <!-- =========================================
+             FORMULARZ
+             ========================================= -->
+
         <section class="contact-section">
 
-          <form class="contact-form">
+          <form
+            class="contact-form"
+            action="send.php"
+            method="POST"
+            novalidate
+          >
+
+            <!-- =====================================
+                 TIMESTAMP ANTYBOTOWY
+                 ===================================== -->
+
+            <input
+              type="hidden"
+              name="form_time"
+              id="form-time"
+            />
+
+
+            <!-- =====================================
+                 HONEYPOT ANTYSPAM
+                 ===================================== -->
+
+            <div
+              class="honeypot"
+              aria-hidden="true"
+            >
+
+              <label for="website">
+                Nie wypełniaj tego pola
+              </label>
+
+              <input
+                type="text"
+                id="website"
+                name="website"
+                tabindex="-1"
+                autocomplete="off"
+              />
+
+            </div>
+
+
+            <!-- =====================================
+                 IMIĘ
+                 ===================================== -->
 
             <div class="form-group">
-              <label for="name">Imię</label>
+
+              <label for="name">
+                Imię
+              </label>
+
               <input
                 type="text"
                 id="name"
                 name="name"
                 placeholder="Twoje imię"
+                autocomplete="name"
+                minlength="2"
+                maxlength="40"
+                pattern="[\p{L}]+(?:[ '\-][\p{L}]+)*"
                 required
               />
+
             </div>
 
 
+            <!-- =====================================
+                 E-MAIL
+                 ===================================== -->
+
             <div class="form-group">
-              <label for="email">Adres e-mail</label>
+
+              <label for="email">
+                Adres e-mail
+              </label>
+
               <input
                 type="email"
                 id="email"
                 name="email"
                 placeholder="twoj@email.pl"
+                autocomplete="email"
+                maxlength="254"
                 required
               />
+
             </div>
 
 
+            <!-- =====================================
+                 WIADOMOŚĆ
+                 ===================================== -->
+
             <div class="form-group">
-              <label for="message">Wiadomość</label>
+
+              <label for="message">
+                Wiadomość
+              </label>
+
               <textarea
                 id="message"
                 name="message"
                 rows="6"
+                minlength="10"
+                maxlength="3000"
                 placeholder="Napisz swoją wiadomość..."
                 required
               ></textarea>
+
             </div>
 
 
-            <button type="submit" class="button">
+            <!-- =====================================
+                 PRZYCISK
+                 ===================================== -->
+
+            <button
+              type="submit"
+              class="button"
+            >
               Wyślij wiadomość
               <span aria-hidden="true">→</span>
             </button>
@@ -104,9 +236,13 @@
         </section>
 
 
+        <!-- =========================================
+             INFO
+             ========================================= -->
+
         <p class="legal-date">
-          Odpowiadamy na wiadomości wysłane za pośrednictwem formularza
-          kontaktowego.
+          Odpowiadamy na wiadomości wysłane za pośrednictwem
+          formularza kontaktowego.
         </p>
 
       </div>
@@ -114,29 +250,56 @@
     </main>
 
 
+    <!-- =========================================
+         FOOTER
+         ========================================= -->
+
     <footer class="site-footer">
 
       <div class="container footer-inner">
 
         <div>
-          <a class="logo" href="index.html">
+
+          <a
+            class="logo"
+            href="index.html"
+          >
             Powrót do <span>ex</span>
           </a>
 
-          <p>Bo nie wszystko stracone.</p>
+          <p>
+            Bo nie wszystko stracone.
+          </p>
+
         </div>
 
+
         <div class="footer-links">
-          <a href="regulamin.html">Regulamin</a>
+
+          <a href="regulamin.html">
+            Regulamin
+          </a>
+
           <a href="polityka-prywatnosci.html">
             Polityka prywatności
           </a>
-          <a href="kontakt.html">Kontakt</a>
+
+          <a href="kontakt.html">
+            Kontakt
+          </a>
+
         </div>
 
       </div>
 
     </footer>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+         ========================================= -->
+
+    <script src="js/contact.js"></script>
 
   </body>
 </html>
