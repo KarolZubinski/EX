@@ -2,25 +2,139 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- =========================================
+         BASIC SEO / ACCESSIBILITY
+         ========================================= -->
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
 
     <meta
       name="description"
-      content="Powrót do ex — praktyczny e-book pomagający zrozumieć rozstanie, relację i świadomie zdecydować, co dalej."
+      content="Powrót do ex — praktyczny e-book o rozstaniu, relacjach i świadomym podejmowaniu decyzji. Zrozum, co poszło nie tak i zdecyduj, co dalej."
     />
 
-    <title>Powrót do ex — Praktyczny e-book</title>
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large"
+    />
 
-    <!-- Fonts -->
+    <meta name="author" content="Powrót do ex" />
+
+    <meta name="theme-color" content="#151416" />
+
+    <link rel="canonical" href="https://powrotdoex.pl/" />
+
+    <title>Powrót do ex — Praktyczny e-book o rozstaniu i relacjach</title>
+
+
+    <!-- =========================================
+         OPEN GRAPH
+         ========================================= -->
+
+    <meta property="og:type" content="website" />
+
+    <meta
+      property="og:title"
+      content="Powrót do ex — Praktyczny e-book"
+    />
+
+    <meta
+      property="og:description"
+      content="Praktyczny e-book, który pomoże Ci zrozumieć rozstanie, uporządkować myśli i świadomie zdecydować, co dalej."
+    />
+
+    <meta
+      property="og:url"
+      content="https://powrotdoex.pl/"
+    />
+
+    <meta
+      property="og:site_name"
+      content="Powrót do ex"
+    />
+
+    <meta
+      property="og:locale"
+      content="pl_PL"
+    />
+
+    <meta
+      property="og:image"
+      content="https://powrotdoex.pl/assets/okladka-ebooka.png"
+    />
+
+    <meta
+      property="og:image:alt"
+      content="Okładka e-booka Powrót do ex"
+    />
+
+
+    <!-- =========================================
+         TWITTER / X
+         ========================================= -->
+
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+
+    <meta
+      name="twitter:title"
+      content="Powrót do ex — Praktyczny e-book"
+    />
+
+    <meta
+      name="twitter:description"
+      content="Praktyczny e-book o rozstaniu, relacjach i świadomym podejmowaniu decyzji."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://powrotdoex.pl/assets/okladka-ebooka.png"
+    />
+
+    <meta
+      name="twitter:image:alt"
+      content="Okładka e-booka Powrót do ex"
+    />
+
+
+    <!-- =========================================
+         FAVICON
+         ========================================= -->
+
+    <link
+      rel="icon"
+      href="assets/okladka-ebooka.png"
+      type="image/png"
+    />
+
+
+    <!-- =========================================
+         FONTS
+         ========================================= -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
       rel="stylesheet"
     />
 
-    <!-- CSS -->
+
+    <!-- =========================================
+         CSS
+         ========================================= -->
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/mobile.css" />
     <link rel="stylesheet" href="css/benefits.css" />
@@ -28,27 +142,144 @@
     <link rel="stylesheet" href="css/final-cta.css" />
     <link rel="stylesheet" href="css/reviews.css" />
     <link rel="stylesheet" href="css/faq.css" />
+
+
+    <!-- =========================================
+         STRUCTURED DATA — WEBSITE
+         ========================================= -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Powrót do ex",
+        "url": "https://powrotdoex.pl/",
+        "inLanguage": "pl-PL"
+      }
+    </script>
+
+
+    <!-- =========================================
+         STRUCTURED DATA — BOOK
+         ========================================= -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "name": "Powrót do ex",
+        "description": "Praktyczny e-book pomagający zrozumieć rozstanie, relację i świadomie zdecydować, co dalej.",
+        "image": "https://powrotdoex.pl/assets/okladka-ebooka.png",
+        "url": "https://powrotdoex.pl/",
+        "inLanguage": "pl-PL",
+        "bookFormat": "EBook"
+      }
+    </script>
+
+
+    <!-- =========================================
+         STRUCTURED DATA — FAQ
+         ========================================= -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "W jakim formacie otrzymam e-booka?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "E-book jest dostępny w formacie PDF, który możesz czytać na komputerze, tablecie lub telefonie."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy e-book jest tylko dla osób, które chcą wrócić do ex?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nie. Materiał pomaga również zrozumieć rozstanie i świadomie zdecydować, czy powrót do relacji ma sens."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy e-book pomoże mi zdecydować, czy warto wrócić?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "E-book nie daje gotowej odpowiedzi. Pomaga przeanalizować sytuację, własne emocje i przyczyny rozstania, żeby łatwiej podjąć świadomą decyzję."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy e-book jest dla mnie, jeśli rozstanie było niedawno?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tak. Materiał może pomóc uporządkować myśli i spojrzeć na sytuację z większego dystansu."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy e-book mówi tylko o odzyskaniu byłej lub byłego?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nie. Duża część materiału dotyczy również zrozumienia relacji, komunikacji, własnych błędów i tego, jak budować zdrowszą relację — niezależnie od tego, czy będzie to powrót do ex."
+            }
+          }
+        ]
+      }
+    </script>
   </head>
 
+
   <body>
+
+    <!-- =========================================
+         SKIP LINK — A11Y
+         ========================================= -->
+
+    <a
+      class="skip-link"
+      href="#main-content"
+    >
+      Przejdź do głównej treści
+    </a>
+
+
     <!-- =========================================
          HEADER
          ========================================= -->
 
     <header class="site-header">
       <div class="container nav">
-        <a class="logo" href="#top" aria-label="Powrót do ex — strona główna">
+
+        <a
+          class="logo"
+          href="#top"
+          aria-label="Powrót do ex — strona główna"
+        >
           Powrót do <span>ex</span>
         </a>
 
-        <nav class="desktop-nav" aria-label="Główna nawigacja">
+
+        <nav
+          class="desktop-nav"
+          aria-label="Główna nawigacja"
+        >
           <a href="#ebook">O e-booku</a>
           <a href="#dla-kogo">Dla kogo</a>
           <a href="#opinie">Opinie</a>
           <a href="#faq">FAQ</a>
         </nav>
 
-        <a class="button button-small" href="#kup"> Kup teraz </a>
+
+        <a
+          class="button button-small"
+          href="#kup"
+        >
+          Kup teraz
+        </a>
+
 
         <button
           class="menu-toggle"
@@ -57,406 +288,794 @@
           aria-expanded="false"
           aria-controls="mobile-navigation"
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
         </button>
+
       </div>
 
-      <nav id="mobile-navigation" class="mobile-nav" aria-label="Menu mobilne">
+
+      <nav
+        id="mobile-navigation"
+        class="mobile-nav"
+        aria-label="Menu mobilne"
+      >
         <a href="#ebook">O e-booku</a>
         <a href="#dla-kogo">Dla kogo</a>
         <a href="#opinie">Opinie</a>
         <a href="#faq">FAQ</a>
 
-        <a class="button" href="#kup"> Kup e-booka </a>
+        <a
+          class="button"
+          href="#kup"
+        >
+          Kup e-booka
+        </a>
       </nav>
+
     </header>
 
-    <main id="top">
+
+    <!-- =========================================
+         MAIN
+         ========================================= -->
+
+    <main id="main-content">
+
       <!-- =========================================
            HERO
            ========================================= -->
 
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">PRAKTYCZNY PRZEWODNIK</p>
+      <section
+        class="hero"
+        id="top"
+        aria-labelledby="hero-title"
+      >
 
-            <h1>
+        <div class="container hero-grid">
+
+          <div class="hero-copy">
+
+            <p class="eyebrow">
+              PRAKTYCZNY PRZEWODNIK
+            </p>
+
+
+            <h1 id="hero-title">
               Czasem warto dać
               <span>drugą szansę.</span>
             </h1>
 
+
             <p class="hero-description">
-              Zrozum, co poszło nie tak, odzyskaj spokój i dowiedz się, czy
-              warto wrócić — na swoich zasadach.
+              Zrozum, co poszło nie tak, odzyskaj spokój i dowiedz się,
+              czy warto wrócić — na swoich zasadach.
             </p>
 
-            <a class="button" href="#kup">
+
+            <a
+              class="button"
+              href="#kup"
+            >
               Kup e-booka
               <span aria-hidden="true">→</span>
             </a>
 
-            <div class="trust-row">
+
+            <div
+              class="trust-row"
+              aria-label="Najważniejsze informacje dotyczące zakupu"
+            >
+
               <div>
-                <span class="trust-icon" aria-hidden="true"> ⌑ </span>
+                <span
+                  class="trust-icon"
+                  aria-hidden="true"
+                >
+                  ⌑
+                </span>
                 Bezpieczna płatność
               </div>
 
+
               <div>
-                <span class="trust-icon" aria-hidden="true"> ↓ </span>
+                <span
+                  class="trust-icon"
+                  aria-hidden="true"
+                >
+                  ↓
+                </span>
                 Natychmiastowy dostęp
               </div>
+
             </div>
+
           </div>
 
-          <!-- Ebook -->
 
-          <div class="book-stage" aria-label="Okładka e-booka Powrót do ex">
-            <div class="book-glow" aria-hidden="true"></div>
+          <!-- EBOOK -->
+
+          <div
+            class="book-stage"
+            aria-label="Okładka e-booka Powrót do ex"
+          >
+
+            <div
+              class="book-glow"
+              aria-hidden="true"
+            ></div>
+
 
             <div class="book">
+
               <img
                 src="assets/okladka-ebooka.png"
                 alt="Okładka e-booka Powrót do ex"
+                width="600"
+                height="848"
               />
 
-              <div class="book-spine" aria-hidden="true"></div>
+              <div
+                class="book-spine"
+                aria-hidden="true"
+              ></div>
+
             </div>
+
           </div>
+
         </div>
+
       </section>
+
 
       <!-- =========================================
            BENEFITS
            ========================================= -->
 
-      <section class="benefits section-light" id="ebook">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow dark">W ŚRODKU</p>
+      <section
+        class="benefits section-light"
+        id="ebook"
+        aria-labelledby="benefits-title"
+      >
 
-            <h2>Co znajdziesz w e-booku?</h2>
+        <div class="container">
+
+          <div class="section-heading">
+
+            <p class="eyebrow dark">
+              W ŚRODKU
+            </p>
+
+            <h2 id="benefits-title">
+              Co znajdziesz w e-booku?
+            </h2>
+
           </div>
+
 
           <div class="benefit-grid">
-            <article class="benefit">
-              <div class="icon-circle" aria-hidden="true">✦</div>
-
-              <h3>Zrozumienie</h3>
-
-              <p>
-                Dowiesz się, dlaczego doszło do rozstania i co naprawdę mogło
-                się wydarzyć.
-              </p>
-            </article>
 
             <article class="benefit">
-              <div class="icon-circle" aria-hidden="true">↗</div>
 
-              <h3>Praktyczne kroki</h3>
+              <div
+                class="icon-circle"
+                aria-hidden="true"
+              >
+                ✦
+              </div>
+
+              <h3>
+                Zrozumienie
+              </h3>
 
               <p>
-                Poznasz konkretne strategie, które możesz wdrożyć bez zbędnego
-                lania wody.
+                Dowiesz się, dlaczego doszło do rozstania i co naprawdę
+                mogło się wydarzyć.
               </p>
+
             </article>
+
 
             <article class="benefit">
-              <div class="icon-circle" aria-hidden="true">♡</div>
 
-              <h3>Lepsza komunikacja</h3>
+              <div
+                class="icon-circle"
+                aria-hidden="true"
+              >
+                ↗
+              </div>
+
+              <h3>
+                Praktyczne kroki
+              </h3>
 
               <p>
-                Nauczysz się rozmawiać bez presji, manipulacji i powtarzania
-                tych samych błędów.
+                Poznasz konkretne strategie, które możesz wdrożyć bez
+                zbędnego lania wody.
               </p>
+
             </article>
+
 
             <article class="benefit">
-              <div class="icon-circle" aria-hidden="true">○</div>
 
-              <h3>Nowe spojrzenie</h3>
+              <div
+                class="icon-circle"
+                aria-hidden="true"
+              >
+                ♡
+              </div>
+
+              <h3>
+                Lepsza komunikacja
+              </h3>
 
               <p>
-                Łatwiej ocenisz sytuację i podejmiesz decyzję, która będzie
-                dobra dla Ciebie.
+                Nauczysz się rozmawiać bez presji, manipulacji i
+                powtarzania tych samych błędów.
               </p>
+
             </article>
+
+
+            <article class="benefit">
+
+              <div
+                class="icon-circle"
+                aria-hidden="true"
+              >
+                ○
+              </div>
+
+              <h3>
+                Nowe spojrzenie
+              </h3>
+
+              <p>
+                Łatwiej ocenisz sytuację i podejmiesz decyzję,
+                która będzie dobra dla Ciebie.
+              </p>
+
+            </article>
+
           </div>
+
         </div>
+
       </section>
+
 
       <!-- =========================================
            AUDIENCE
            ========================================= -->
 
-      <section class="audience" id="dla-kogo">
-        <div class="audience-bg-glow audience-bg-glow-left"></div>
-        <div class="audience-bg-glow audience-bg-glow-right"></div>
+      <section
+        class="audience"
+        id="dla-kogo"
+        aria-labelledby="audience-title"
+      >
 
-        <div class="audience-line"></div>
+        <div
+          class="audience-bg-glow audience-bg-glow-left"
+          aria-hidden="true"
+        ></div>
+
+        <div
+          class="audience-bg-glow audience-bg-glow-right"
+          aria-hidden="true"
+        ></div>
+
+        <div
+          class="audience-line"
+          aria-hidden="true"
+        ></div>
+
 
         <div class="container audience-container">
-          <!-- NAGŁÓWEK -->
+
           <div class="audience-heading">
+
             <p class="eyebrow">
-              <span></span>
+
+              <span aria-hidden="true"></span>
+
               DLA KOGO
-              <span></span>
+
+              <span aria-hidden="true"></span>
+
             </p>
 
-            <h2>
+
+            <h2 id="audience-title">
               Dla kogo jest<br />
               ten e-book?
             </h2>
+
           </div>
 
-          <!-- ZAWARTOŚĆ -->
+
           <div class="audience-content">
-            <!-- LEWA STRONA -->
+
             <div class="audience-list">
-              <h3>Dla osób, które...</h3>
+
+              <h3>
+                Dla osób, które...
+              </h3>
+
 
               <ul>
+
                 <li>
-                  <span class="audience-icon">♡</span>
+
+                  <span
+                    class="audience-icon"
+                    aria-hidden="true"
+                  >
+                    ♡
+                  </span>
+
                   <p>
                     wciąż myślą o byłej lub byłym<br />
                     i nie potrafią zamknąć tego rozdziału,
                   </p>
+
                 </li>
 
+
                 <li>
-                  <span class="audience-icon">⌕</span>
+
+                  <span
+                    class="audience-icon"
+                    aria-hidden="true"
+                  >
+                    ⌕
+                  </span>
+
                   <p>
                     chcą zrozumieć, co poszło nie tak<br />
                     i wyciągnąć z tego wnioski,
                   </p>
+
                 </li>
 
+
                 <li>
-                  <span class="audience-icon">♧</span>
+
+                  <span
+                    class="audience-icon"
+                    aria-hidden="true"
+                  >
+                    ♧
+                  </span>
+
                   <p>
                     szukają praktycznych rozwiązań,<br />
                     a nie pustych teorii,
                   </p>
+
                 </li>
 
+
                 <li>
-                  <span class="audience-icon">◎</span>
+
+                  <span
+                    class="audience-icon"
+                    aria-hidden="true"
+                  >
+                    ◎
+                  </span>
+
                   <p>
                     chcą podjąć świadomą decyzję —<br />
                     czy walczyć, czy iść dalej,
                   </p>
+
                 </li>
 
+
                 <li>
-                  <span class="audience-icon">⌁</span>
+
+                  <span
+                    class="audience-icon"
+                    aria-hidden="true"
+                  >
+                    ⌁
+                  </span>
+
                   <p>
                     wierzą, że po trudnych doświadczeniach<br />
                     można zbudować coś lepszego.
                   </p>
+
                 </li>
+
               </ul>
+
             </div>
 
-            <!-- PRAWA STRONA -->
+
             <div class="audience-quote">
-              <span class="quote-mark">“</span>
+
+              <span
+                class="quote-mark"
+                aria-hidden="true"
+              >
+                “
+              </span>
+
 
               <blockquote>
                 Czasem strata<br />
                 jest początkiem<br />
-                czegoś lepszego.”
+                czegoś lepszego.
               </blockquote>
 
-              <div class="quote-divider"></div>
+
+              <div
+                class="quote-divider"
+                aria-hidden="true"
+              ></div>
+
 
               <p>
                 NOWA PERSPEKTYWA<br />
                 JEST MOŻLIWA
               </p>
+
             </div>
+
           </div>
+
         </div>
 
-        <div class="audience-bottom-line"></div>
+
+        <div
+          class="audience-bottom-line"
+          aria-hidden="true"
+        ></div>
+
       </section>
+
 
       <!-- =========================================
            REVIEWS
            ========================================= -->
 
-      <section class="reviews section-light" id="opinie">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow dark">OPINIE</p>
+      <section
+        class="reviews section-light"
+        id="opinie"
+        aria-labelledby="reviews-title"
+      >
 
-            <h2>Co mówią czytelnicy?</h2>
+        <div class="container">
+
+          <div class="section-heading">
+
+            <p class="eyebrow dark">
+              OPINIE
+            </p>
+
+            <h2 id="reviews-title">
+              Co mówią czytelnicy?
+            </h2>
+
           </div>
+
 
           <div class="review-grid">
-            <article class="review">
-              <span class="quote" aria-hidden="true"> “ </span>
-
-              <p>
-                Ten e-book pomógł mi spojrzeć na sytuację z innej perspektywy. W
-                końcu zrozumiałem, co naprawdę się wydarzyło.
-              </p>
-
-              <strong> — Michał, 29 lat </strong>
-            </article>
 
             <article class="review">
-              <span class="quote" aria-hidden="true"> “ </span>
+
+              <span
+                class="quote"
+                aria-hidden="true"
+              >
+                “
+              </span>
 
               <p>
-                Dużo konkretów, bez zbędnego lania wody. Przeczytałam w jeden
-                wieczór i od razu zaczęłam działać.
+                Ten e-book pomógł mi spojrzeć na sytuację z innej
+                perspektywy. W końcu zrozumiałem, co naprawdę się wydarzyło.
               </p>
 
-              <strong> — Karolina, 32 lata </strong>
+              <strong>
+                — Michał, 29 lat
+              </strong>
+
             </article>
+
 
             <article class="review">
-              <span class="quote" aria-hidden="true"> “ </span>
+
+              <span
+                class="quote"
+                aria-hidden="true"
+              >
+                “
+              </span>
 
               <p>
-                Nie daje gotowych odpowiedzi, ale pomaga zadać sobie właściwe
-                pytania. Dokładnie tego potrzebowałem.
+                Dużo konkretów, bez zbędnego lania wody. Przeczytałam
+                w jeden wieczór i od razu zaczęłam działać.
               </p>
 
-              <strong> — Paweł, 34 lata </strong>
+              <strong>
+                — Karolina, 32 lata
+              </strong>
+
             </article>
+
+
+            <article class="review">
+
+              <span
+                class="quote"
+                aria-hidden="true"
+              >
+                “
+              </span>
+
+              <p>
+                Nie daje gotowych odpowiedzi, ale pomaga zadać sobie
+                właściwe pytania. Dokładnie tego potrzebowałem.
+              </p>
+
+              <strong>
+                — Paweł, 34 lata
+              </strong>
+
+            </article>
+
           </div>
+
         </div>
+
       </section>
+
 
       <!-- =========================================
            FINAL CTA
            ========================================= -->
 
-      <section class="final-cta" id="kup">
-        <div class="container final-content">
-          <p class="eyebrow">POWRÓT DO EX</p>
+      <section
+        class="final-cta"
+        id="kup"
+        aria-labelledby="cta-title"
+      >
 
-          <h2>
+        <div class="container final-content">
+
+          <p class="eyebrow">
+            POWRÓT DO EX
+          </p>
+
+
+          <h2 id="cta-title">
             Twoja historia nie musi<br />
             kończyć się tutaj.
           </h2>
 
-          <p>Przeczytaj. Zrozum. Podejmij świadomą decyzję.</p>
 
-          <a class="button" href="#" data-buy>
+          <p>
+            Przeczytaj. Zrozum. Podejmij świadomą decyzję.
+          </p>
+
+
+          <a
+            class="button"
+            href="#"
+            data-buy
+            aria-label="Kup e-booka Powrót do ex"
+          >
             Kup e-booka
             <span aria-hidden="true">→</span>
           </a>
 
-          <div class="trust-row">
-            <div>
-              <span class="trust-icon" aria-hidden="true"> ⌑ </span>
-              Bezpieczna płatność
-            </div>
+
+          <div
+            class="trust-row"
+            aria-label="Informacje dotyczące zakupu"
+          >
 
             <div>
-              <span class="trust-icon" aria-hidden="true"> ↓ </span>
-              Natychmiastowy dostęp
+
+              <span
+                class="trust-icon"
+                aria-hidden="true"
+              >
+                ⌑
+              </span>
+
+              Bezpieczna płatność
+
             </div>
+
+
+            <div>
+
+              <span
+                class="trust-icon"
+                aria-hidden="true"
+              >
+                ↓
+              </span>
+
+              Natychmiastowy dostęp
+
+            </div>
+
           </div>
+
         </div>
+
       </section>
+
 
       <!-- =========================================
            FAQ
            ========================================= -->
 
-      <section class="faq" id="faq">
+      <section
+        class="faq"
+        id="faq"
+        aria-labelledby="faq-title"
+      >
+
         <div class="container faq-container">
+
           <div class="section-heading">
-            <p class="eyebrow dark">FAQ</p>
-            <h2>Najczęstsze pytania</h2>
+
+            <p class="eyebrow dark">
+              FAQ
+            </p>
+
+            <h2 id="faq-title">
+              Najczęstsze pytania
+            </h2>
+
           </div>
 
+
           <div class="faq-list">
-            <details>
-              <summary>W jakim formacie otrzymam e-booka?</summary>
-              <p>
-                E-book jest dostępny w formacie PDF, który możesz czytać na
-                komputerze, tablecie lub telefonie.
-              </p>
-            </details>
 
             <details>
+
+              <summary>
+                W jakim formacie otrzymam e-booka?
+              </summary>
+
+              <p>
+                E-book jest dostępny w formacie PDF, który możesz czytać
+                na komputerze, tablecie lub telefonie.
+              </p>
+
+            </details>
+
+
+            <details>
+
               <summary>
                 Czy e-book jest tylko dla osób, które chcą wrócić do ex?
               </summary>
+
               <p>
-                Nie. Materiał pomaga również zrozumieć rozstanie i świadomie
-                zdecydować, czy powrót do relacji ma sens.
+                Nie. Materiał pomaga również zrozumieć rozstanie i
+                świadomie zdecydować, czy powrót do relacji ma sens.
               </p>
+
             </details>
 
+
             <details>
+
               <summary>
                 Czy e-book pomoże mi zdecydować, czy warto wrócić?
               </summary>
+
               <p>
                 E-book nie daje gotowej odpowiedzi. Pomaga przeanalizować
                 sytuację, własne emocje i przyczyny rozstania, żeby łatwiej
                 podjąć świadomą decyzję.
               </p>
+
             </details>
 
+
             <details>
+
               <summary>
                 Czy e-book jest dla mnie, jeśli rozstanie było niedawno?
               </summary>
+
               <p>
-                Tak. Materiał może pomóc uporządkować myśli i spojrzeć na
-                sytuację z większego dystansu.
+                Tak. Materiał może pomóc uporządkować myśli i spojrzeć
+                na sytuację z większego dystansu.
               </p>
+
             </details>
 
+
             <details>
+
               <summary>
                 Czy e-book mówi tylko o odzyskaniu byłej lub byłego?
               </summary>
+
               <p>
-                Nie. Duża część materiału dotyczy również zrozumienia relacji,
-                komunikacji, własnych błędów i tego, jak budować zdrowszą
-                relację — niezależnie od tego, czy będzie to powrót do ex.
+                Nie. Duża część materiału dotyczy również zrozumienia
+                relacji, komunikacji, własnych błędów i tego, jak budować
+                zdrowszą relację — niezależnie od tego, czy będzie to
+                powrót do ex.
               </p>
+
             </details>
+
           </div>
+
         </div>
+
       </section>
+
     </main>
+
 
     <!-- =========================================
          FOOTER
          ========================================= -->
 
     <footer class="site-footer">
+
       <div class="container footer-inner">
+
         <div>
-          <a class="logo" href="#top"> Powrót do <span>ex</span> </a>
 
-          <p>Bo nie wszystko stracone.</p>
+          <a
+            class="logo"
+            href="#top"
+            aria-label="Powrót do ex — początek strony"
+          >
+            Powrót do <span>ex</span>
+          </a>
+
+          <p>
+            Bo nie wszystko stracone.
+          </p>
+
         </div>
 
-        <div class="footer-links">
-          <a href="regulamin.html">Regulamin</a>
-          <a href="polityka-prywatnosci.html">Polityka prywatności</a>
-          <a href="kontakt.html">Kontakt</a>
-        </div>
+
+        <nav
+          class="footer-links"
+          aria-label="Linki informacyjne"
+        >
+
+          <a href="regulamin.html">
+            Regulamin
+          </a>
+
+          <a href="polityka-prywatnosci.html">
+            Polityka prywatności
+          </a>
+
+          <a href="kontakt.html">
+            Kontakt
+          </a>
+
+        </nav>
+
       </div>
+
     </footer>
 
-    <!-- JavaScript -->
+
+    <!-- =========================================
+         JAVASCRIPT
+         ========================================= -->
 
     <script src="js/mobile-menu.js"></script>
     <script src="js/purchase.js"></script>
+
   </body>
 </html>
