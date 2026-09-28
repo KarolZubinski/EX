@@ -273,7 +273,7 @@ h1 {
 .book {
   position: relative;
 
-  width: min(390px, 72%);
+  width: min(540px, 90%);
 
   transform: rotateY(-9deg) rotateZ(-1deg);
 
@@ -287,12 +287,11 @@ h1 {
 }
 
 .book img {
+  display: block;
   width: 100%;
-
-  aspect-ratio: 0.707 / 1;
-
-  object-fit: cover;
-
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
   border-radius: 2px 4px 4px 2px;
 }
 
